@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security Vulnerability
+    url: https://github.com/nebeto-studio/.github/blob/main/SECURITY.md
+    about: Please report security vulnerabilities privately — never in a public issue.

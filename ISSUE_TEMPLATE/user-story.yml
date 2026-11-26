@@ -1,0 +1,37 @@
+name: User Story
+description: Define a functional or technical User Story (US-XXX)
+labels: ["user-story"]
+body:
+  - type: input
+    id: us_id
+    attributes:
+      label: User Story ID
+      placeholder: US-001
+    validations:
+      required: true
+  - type: textarea
+    id: story
+    attributes:
+      label: Story
+      value: |
+        **As a** ...
+        **I want** ...
+        **So that** ...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria (Given / When / Then)
+      placeholder: |
+        - Given ... When ... Then ...
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Quality & Compliance Gates
+      options:
+        - label: Security & multi-tenancy / RBAC reviewed
+        - label: Accessibility (RGAA 4.1 / WCAG 2.1 AA) verified (if UI)
+        - label: Automated tests & CI gates covered
